@@ -1,0 +1,44 @@
+.container, .band, .face {
+    position: absolute;
+}
+
+.container {
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 200px;
+    height: 100px;
+    border: 2px crimson solid;
+}
+
+.band {
+    width: 250px;
+    height: 70px;
+    background: #E5C079;
+    border-radius: 100px;
+}
+
+.face {
+    top: 30px;
+    left: 100px;
+    width: 10px;
+    height: 10px;
+    background: #000;
+    border-radius: 100%;
+    content: '';
+
+    :after, :before {
+        position: absolute;
+        content: '';
+    }
+    
+    :before {
+        left: 50px;
+        width: 10px;
+        height: 10px;
+        background: #000;
+        border-radius: 100%;
+    }
+}
