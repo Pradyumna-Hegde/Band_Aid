@@ -29,13 +29,12 @@
     border-radius: 100%;
     content: '';
 
-    :after, :before {
+    ::before, ::after {
         position: absolute;
-        content: '';
     }
-    
-    :before {
-        left: 50px;
+
+     ::before {
+        left: 40px;
         width: 10px;
         height: 10px;
         background: #000;
